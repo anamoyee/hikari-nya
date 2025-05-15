@@ -14,6 +14,7 @@ dependencies = [
 [project.optional-dependencies]
 miru = ["hikari-miru>=4.2.0,<5"]
 arc = ["hikari-arc>=2.1.0,<3"]
+# uv sync --extra miru --extra arc
 
 [tool.uv]
 dev-dependencies = [
