@@ -1,16 +1,24 @@
 [project]
 name = "hikari-nya"
-version = "0.1.0"
-description = "Add your description here"
+dynamic = ["version"]
+description = "Sometimes useful set of tools for hikari-based discord bot projects"
 readme = "README.md"
 authors = [
-    { name = "anamoyee", email = "thecreatorrr333@gmail.com" }
+    { name = "anamoyee" }
 ]
 requires-python = ">=3.12"
 dependencies = [
-	"hikari>=2.3.1",
-	"hikari-miru>=4.2.0,<5",
-	"hikari-arc>=2.1.0,<3",
+	"hikari>=2.3.2",
+]
+
+[project.optional-dependencies]
+miru = ["hikari-miru>=4.2.0,<5"]
+arc = ["hikari-arc>=2.1.0,<3"]
+
+[tool.uv]
+dev-dependencies = [
+	"tcrutils>=13.1.32",
+	"pytest>=8.3.5",
 ]
 
 [build-system]
